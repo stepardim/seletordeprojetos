@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #btmpg1:hover{
+            background-color: rgb(255, 101, 132) !important;
+            color: white !important;
+            opacity: 1 !important;
+        }
+
+        #apg1{
+            color: rgb(245, 220, 225);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div style="min-height: 100vh;" class="d-flex flex-column">
+
+        <header style="min-height: 10vh;">
+
+            <nav class="navbar bg-body-tertiary" style="height: 10vh;background-color: rgb(170, 127, 74) !important; display: flex; justify-content: center; align-items: center;" id="apg1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/pata1.png" alt="Logo" width="100%" height="90%"
+                            class="d-inline-block align-text-top"> 
+                    </a>
+
+                    <h4>PetCare</h4>
+
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <!--Pagina 1-->
+            <section
+                style="min-height: 90vh;background-image: url('./images/dog2.jpg!d'); background-size: cover; background-position: center; background-repeat: no repeat; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                <h3 style="color: rgb(255, 147, 169); background-color: white;"> Seu pet precisa de ATENÇÃO nesse verão! </h3>
+                <h4 style="color: rgb(255, 147, 169); background-color: white;"> O el nino esta chegando, cuidado para seu pet não queimar as patinhas!</h4>
+                <hr>
+                <a href="#pg2">
+
+                    <button id="btmpg1" class="btn btn-warning" style="background-color: rgb(255, 147, 169); border: 1px solid  white; border-radius: 15px; display: flex; justify-content: center; align-items: center;" >
+                        Clique aqui! Para saver mais
+                    </button>
+
+                </a>
+
+            </section>
+
+            <!--Pagina 2-->
+            <section style="min-height: 100vh; background-color:rgb(245, 220, 225); display: flex; flex-wrap: wrap;" id="pg2">
+
+                <div class="container-fluid">
+
+                    <div class="row " style="min-height: 100vh;">
+
+                        <!--Coluna Esquerda-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center" style="background-color: rgb(233, 220, 255);">
+
+                            <h2>Cuidados com o Pet</h2>
+
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Cuidado 1: Hidratação
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem dicta quidem blanditiis nemo facilis
+                                            asperiores provident unde accusantium, maiores, non ex sint inventore quibusdam eligendi, cupiditate
+                                            doloremque? Pariatur, sunt non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Cuidado 2: Alimentação
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, aperiam nam. Eius facere nobis id esse
+                                            enim amet, odio voluptas dolore nam impedit quo ipsa reprehenderit. Aperiam natus soluta blanditiis.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Cuidado 3: Saude e Higiêne
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo aspernatur animi, eveniet veniam
+                                            sunt architecto odit, vero esse corrupti hic? Placeat, magni! Cumque molestias qui quaerat sed molestiae
+                                            perspiciatis!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Coluna Direita-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center" style="background-color: rgb(220, 235, 255);">
+
+                            <h2>Principais impactos do EL nino nos Pets!</h2>
+                            <hr>
+
+                            <ul class="list-group">
+                            
+                                <li class="list-group-item list-group-item-danger">Estresse termico: Cães rugulam a temperatua ofegando e suando pouco;
+                                    o calor excessido dificulta esse refrigeramento
+                                </li>
+                                <li class="list-group-item list-group-item-warning">Desidratação e Insolação: O consuma inadequado de agua e a exposição ao sol forte levam a graves e rapidos de prostração</li>
+                                <li class="list-group-item list-group-item-danger">Problemas Respiratórios: O ar seco e a fumaça de queimadas (comuns em periodos de seca estrema) irritam as vias aereas de prostração </li>
+                                <li class="list-group-item list-group-item-warning">Ploriferação de Parasitas:  O aumento de temperatura e umidade em algumas micro-regiões favorece pulgas, carrapatos e mosquitos</li>
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--Pagina 3-->
+            <section style="min-height: 100vh; background-color: rgb(245, 232, 220);" class="d-flex justify-content-center align-items-center flex-column">
+
+                <h1>Gostaria de mais informações? Entre em contato com nossa ong:</h1>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Não vamos compartilhar seu e-mail!</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer style="min-height: 10vh; background-color: rgb(245, 220, 225);" class="mt-auto">
+
+
+
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
